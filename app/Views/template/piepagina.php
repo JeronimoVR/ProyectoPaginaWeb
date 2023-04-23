@@ -4,19 +4,19 @@
 
     <div class="row text-center">
 
-      <div class="col-12 col-lg-2">
+      <div class="col-12 col-lg-3">
         <a href="#">Preguntas frecuentes</a>
       </div>
 
-      <div class="col-12 col-lg-2">
-        <a href="#">Contactenos</a>
+      <div class="col-12 col-lg-1">
+        <a href="#">Chefs</a>
       </div>
 
-      <div class="col-12 col-lg-2">
+      <div class="col-12 col-lg-1">
         <a href="#">Prensa</a>
       </div>
 
-      <div class="col-12 col-lg-2">
+      <div class="col-12 col-lg-3">
         <a href="#">Terminos y condiciones</a>
       </div>
 
@@ -25,7 +25,12 @@
       </div>
 
       <div class="col-12 col-lg-2">
-        <a href="#">Chefs</a>
+        <a href="#">Autores</a>
+       <ul class="pb-1 pt-2" >
+              <li><a class="" href="#">Jeronimo</a></li>
+              <li><a class="" href="#">Taylor</a></li>
+              <li><a class="" href="#">Nicole</a></li>
+            </ul> 
       </div>
 
     </div>

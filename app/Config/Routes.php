@@ -50,3 +50,4 @@ if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
 $routes->post('login', 'Home::login');
 $routes->get('registro', 'Home::registrarse');
 $routes->post('guardar', 'Home::guardar');
+$routes->get('salir', 'Home::salir');
