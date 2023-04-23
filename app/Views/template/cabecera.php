@@ -4,31 +4,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document Title</title>
+  <title>Incio</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <style>
+    nav,
     #footer {
-      background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
+      /*background-color: #b2d9f7;*/
+
+      background: rgb(2, 0, 36);
+      background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 73, 255, 0.7905026848473317) 100%);
     }
 
-    nav {
-      background-color: #b2d9f7;
+    #navbarDropdown{
+      color: #fff;
     }
 
+    .carousel-inner div img {
+      max-height: 70vh;
+      object-fit: cover;
+      filter: blur(70%);
+    }
+
+    #carousel {
+      position: relative;
+    }
+
+    #carousel .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
     #footer a {
-      color: white;
+      color: #fff;
     }
+
+    
   </style>
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light ">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-light">
 
     <div class="container">
 
-      <a class="navbar-brand fs-3 text" href="#">Tu cocina</a>
+      <a class="navbar-brand fs-3 text" href="#"><strong>Tu cocina</strong> </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -55,7 +79,7 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle fst-italic" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle fst-italic fw-bolder" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Usuario <strong><?php echo session('usuario') ?></strong>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
