@@ -22,10 +22,10 @@ class Home extends BaseController
         $Usuario = new Usuario();
 
         $datosUsuarios = $Usuario->obtenerUsuario(['usuario' => $usuario]);
-                
+
         if (
             count($datosUsuarios) > 0 &&
-            password_verify($password, $datosUsuarios[0]['password'])       
+            password_verify($password, $datosUsuarios[0]['password'])
         ) {
 
             $data = [
@@ -35,7 +35,7 @@ class Home extends BaseController
             $session->set($data);
 
             #return redirect()->to(base_url('/inicio'))->with('mensaje', '0');
-            return view('paginas/inicio',$datos,["usuario" => $data]);
+            return view('paginas/inicio', $datos, ["usuario" => $data]);
         } else {
             #echo 'Si tiene datos';
             return redirect()->to(base_url('/'))->with('mensaje', 'Usuario o contraseña incorrecto');
@@ -78,8 +78,9 @@ class Home extends BaseController
         return $this->response->redirect(site_url(''));
     }
 
-    public function salir(){
-        $session=session();
+    public function salir()
+    {
+        $session = session();
         $session->destroy();
         return redirect()->to(base_url('/'));
     }
