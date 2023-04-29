@@ -1,6 +1,6 @@
 <?= $cabecera ?>
 <section>
-    <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause=“false”>
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause=“true”>
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -21,14 +21,15 @@
                 <img src="https://assets.unileversolutions.com/recipes-v2/210690.jpg?imwidth=2000" class="d-block w-100" alt="sopa">
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-        </button>
+        </button> -->
         <div class="overlay carousel-caption">
             <div class="container">
                 <div class="row align-items-center">

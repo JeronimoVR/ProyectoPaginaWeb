@@ -13,11 +13,11 @@
 <body style="background-color:#fbffcc;">
     <br>
     <div class="container">
-        <?php if (session('mensaje')) : ?>
-            <div class="alert alert-danger" role="alert">
-                <strong><?php echo session('mensaje') ?></strong>
+            <?php if (session('mensaje')) : ?>
+                <div class="alert alert-danger" role="alert">
+                    <strong><?php echo session('mensaje') ?></strong>
+                </div>
             <?php endif ?>
-            </div>
             <br>
             <div class="container">
 

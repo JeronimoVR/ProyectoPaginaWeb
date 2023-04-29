@@ -30,6 +30,8 @@ class Home extends BaseController
 
             $data = [
                 "usuario" => $datosUsuarios[0]['usuario'],
+                "nombre" => $datosUsuarios[0]['nombre'],
+                "type" => $datosUsuarios[0]['type'],
             ];
             $session = session();
             $session->set($data);
@@ -59,6 +61,7 @@ class Home extends BaseController
             'usuario' => 'required',
             'password' => 'required',
         ]);
+
         if (!$validacion) {
             $session = session();
             $session->setFlashdata('mensaje', 'Revise la infromacion');
@@ -73,8 +76,12 @@ class Home extends BaseController
             'usuario' => $this->request->getVar('usuario'),
             'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
         ];
-        $usuario->insert($datos);
 
+        if ($usuario->insert($datos)) {
+            return redirect()->to(base_url('/'))->with('mensaje', 'Usuario creado exitosamente!');
+        } else {
+            return redirect()->to(base_url('/registro'))->with('mensaje', 'Hubo un problema en la conexión, revise la información!');
+        }
         return $this->response->redirect(site_url(''));
     }
 
