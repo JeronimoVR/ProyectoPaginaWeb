@@ -87,7 +87,7 @@
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle fst-italic fw-bolder" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <?= session('type') ?> <strong><?= session('nombre') ?></strong>
+            <em>Bienvenid@</em> <strong><?= session('nombre') ?></strong>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Cuenta <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">

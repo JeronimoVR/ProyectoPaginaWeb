@@ -52,19 +52,32 @@ class Home extends BaseController
     public function guardar()
     {
         $usuario = new Usuario();
-
+        /*
         $validacion = $this->validate([
             'nombre' => 'required',
             'apellido' => 'required',
             'telefono' => 'required',
             'correo' => 'required',
+            'type' => 'required',
             'usuario' => 'required',
             'password' => 'required',
-        ]);
+        ]);*/
+        /*
+        $validation = service('validation');
+        $validation->setRules([
+            'name' => 'required|alpha_space',
+            'apellido' => 'required|alpha_space',
+            'telefono' => 'required|integer|is_natural',
+            'correo' => 'required|valid_email|is_unique[personas,correo]',
+            'type' => 'required|alpha_space',
+            'usuario' => 'required|alpha_space|is_unique[personas,usuario]',
+            'password' => 'required',
+        ]);if (!$validation->withRequest()->run()) {*/
 
-        if (!$validacion) {
+
+        if ($this->validate('person')) {
             $session = session();
-            $session->setFlashdata('mensaje', 'Revise la infromacion');
+            $session->setFlashdata('mensaje', 'Revise la información suministrada, el usuario y/o pueden ya estar registrados');
             return redirect()->back()->withInput();
         }
 
@@ -73,6 +86,7 @@ class Home extends BaseController
             'apellido' => $this->request->getVar('apellido'),
             'telefono' => $this->request->getVar('telefono'),
             'correo' => $this->request->getVar('correo'),
+            'type' => 'usuario',
             'usuario' => $this->request->getVar('usuario'),
             'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
         ];

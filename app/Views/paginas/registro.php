@@ -188,12 +188,14 @@
 </head>
 
 <body>
-    <div class="container">
-        <?php if (session('mensaje')) : ?>
-            <div class="alert alert-danger" role="alert">
-                <strong><?php echo session('mensaje') ?></strong>
-            <?php endif ?>
-            </div>
+    <div>
+        <div class="container">
+            <?php if (session('mensaje')) : ?>
+                <div class="alert alert-danger" role="alert">
+                    <strong><?php echo session('mensaje') ?></strong>
+                <?php endif ?>
+                </div>
+        </div>
 
             <form action="<?= site_url('/guardar') ?>" method="post">
 
@@ -217,6 +219,11 @@
                     <input type="correo" name="correo" id="correo">
                 </div>
 
+                <div hidden class="input-group">
+                    <label for="type"></label>
+                    <input type="text" name="type" id="type">
+                </div>
+
                 <div class="input-group">
                     <label for="usuario">Usuario:</label>
                     <input type="text" name="usuario" id="usuario">
@@ -228,9 +235,12 @@
                 </div>
 
                 <div class="">
-                <button class="btn btn-primary" type="submit" name="g" value="guardar">GUARDAR</button>
-                <a href="<?= base_url(''); ?>" class="btn btn-info">Cancelar</a>    
-            </div>
+                    <button class="btn btn-primary" type="submit" name="g" value="guardar">GUARDAR</button>
+                    <a href="<?= base_url(''); ?>" class="btn btn-info">Cancelar</a>
+                </div>
+
+
+
                 <div class="contact-info">
 
                     <div class="info">
@@ -242,10 +252,9 @@
                     </div>
 
                 </div>
-            </form>
-
-            <script src="https://kit.fontawesome.com/bbff992efd.js" crossorigin="anonymous"></script>
-
+            
+    </form>
+        <script src="https://kit.fontawesome.com/bbff992efd.js" crossorigin="anonymous"></script>
 
 </body>
 

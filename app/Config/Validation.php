@@ -38,6 +38,16 @@ class Validation extends BaseConfig
         'single' => 'CodeIgniter\Validation\Views\single',
     ];
 
+    public $person = [
+        'name' => 'required|alpha_space',
+        'apellido' => 'required|alpha_space',
+        'telefono' => 'required|integer|is_natural|max_length[11]',
+        'correo' => 'required|valid_email|is_unique[personas.correo]',
+        'type' => 'required|alpha_space',
+        'usuario' => 'required|alpha_space|is_unique[personas.usuario]',
+        'password' => 'required',
+    ];
+
     // --------------------------------------------------------------------
     // Rules
     // --------------------------------------------------------------------
