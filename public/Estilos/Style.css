@@ -1,0 +1,252 @@
+ /*---Login---*/
+.FondoLogin {
+  background-image: url(https://www.latercera.com/resizer/Xvs9UfbqhU1hrwwlZmBFx4CoqVA=/1200x630/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/D4NDZ2VDHRGCPNJ3SX6XFDKIRQ.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.FondoForm{
+  background-color: rgba(128, 112, 112, 0.4);
+}
+
+/*---Registro---*/
+.FondoRegistro{
+  background-image: url(https://w.forfun.com/fetch/d0/d0489a61e696fc959726fa697d082b6a.jpeg);
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 100vh;
+  background-size: cover;
+  background-position: center; 
+}
+
+.FondoFormRegistro form{
+  background-color: rgba(18, 18, 18, 0.4);
+  color: #ffffff;
+}
+
+.FondoFormRegistro form input{
+  background-color: rgba(20, 20, 20, 0.4);
+  color: #ffffff;
+  border: 2px solid #fff;
+}
+
+/*---Hoja de vida---*/
+ .row .col{
+  display: flex;
+  justify-content: center;
+ }
+
+ .row .col #hoja{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+#hoja {
+  width: 100%;
+  border: 2px solid black;
+  display: flex;
+  background-color: #ffffff;
+  justify-content: center;
+  margin:22px 0px 15px 22px;
+}
+
+.left {
+  width: 35%;
+  background-color: rgb(100, 211, 255);
+}
+
+.left div figure {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left div figure img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border: 1px;
+  border-radius: 100%;
+}
+
+.left .contact {
+  margin: 20px 6px 20px 8px;
+}
+
+.left .contact ul {
+  padding: 0;
+}
+
+.left .contact ul li {
+  list-style: none;
+  margin: 3px 0 3px 0;
+  box-sizing: content-box;
+}
+
+.left .contact ul li img {
+  width: 15px;
+  height: 15px;
+  margin-right: 3px;
+}
+
+.left .contact ul li a {
+  color: #050505;
+  text-decoration: none;
+}
+
+.left .human-skills {
+  margin: 20px 10px 20px 10px;
+}
+
+.left .human-skills ul {
+  padding: 0;
+}
+
+.left .human-skills ul li {
+  margin: 4px;
+  list-style: inside;
+}
+
+.left .professional-skills {
+  margin: 20px 10px 20px 10px;
+}
+
+.left .professional-skills ul {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left .professional-skills ul li {
+  list-style: none;
+  margin: 4px 0 4px 0;
+  box-sizing: content-box;
+}
+
+.left .professional-skills ul li img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.left .professional-skills ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*---------------------------------------------*/
+
+.right {
+  margin: 0px;
+  padding: 15px;
+  background-color: #ffffff;
+}
+
+.right .title {
+  font-size: 25px;
+  font-weight: 1000;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.right .subtitle {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.right .personal-profile {
+  margin: 30px 0 30px 0;
+}
+
+.right .personal-profile h3 {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+.right .personal-profile p {
+  margin: 8px 0 12px 0;
+}
+
+.right .experience {
+  margin: 30px 0 30px 0;
+}
+
+.right .experience h3 {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+.right .experience ul {
+  margin: 5px 0 5px 0;
+}
+
+.right .experience ul li h4 {
+  margin: 14px 0 0 0;
+  font-size: 18px;
+}
+
+.right .experience ul li p {
+  margin: 0px 0 10px 0;
+  font-size: 13px;
+  color: rgb(76, 87, 93);
+}
+
+.right .education {
+  margin: 30px 0 30px 0;
+}
+
+.right .education h3 {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+.right .education ul {
+  margin: 5px 0 5px 0;
+}
+
+.right .education ul li h4 {
+  margin: 14px 0 0 0;
+  font-size: 18px;
+}
+
+.right .education ul li p {
+  margin: 0px 0 10px 0;
+  font-size: 13px;
+  color: rgb(76, 87, 93);
+}
+
+@media (max-width: 306px) {
+  #hoja {
+    display: block;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+ .row .col{
+  display: block;
+  justify-content: center;
+ }
+ .row .col #hoja{
+  width:95%;
+  display: block;
+  justify-content: center;
+}
+
+ /* section {
+    width: 95%;
+    border-color: none;
+    margin: 4px;
+  }*/
+}
